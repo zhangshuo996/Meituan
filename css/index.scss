@@ -1,0 +1,159 @@
+@import "./common";
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    header{
+        height: pxTorem(44px);
+        background: #fff;
+        display: flex;
+        font-size: pxTorem(16px);
+        p{
+            padding: pxTorem(10px);
+        }
+    }
+    .section{
+        flex:1;
+        height: pxTorem(400px);
+        overflow: hidden;
+        div{
+            
+             .section-search{
+            height: pxTorem(30px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .search{
+                background: #f0f1f2;
+                width: pxTorem(345px);
+                height: pxTorem(30px);
+                display: flex;
+                justify-items: center;
+                align-items: center;
+                border-radius: pxTorem(10px);
+                span{
+                    color: #b3b3b3;
+                    padding: 0 pxTorem(10px);
+                }
+                input{
+                    font-size: pxTorem(14px);
+                }
+            }
+            }
+            .section-warp{
+            width: 100%;
+            .swiper-container{
+                width: 100%;
+                height: pxTorem(200px);
+                margin-bottom: pxTorem(30px);
+                .swiper-wrapper{
+                    .swiper-slide{
+                        flex-wrap: wrap;
+                        display: flex;
+                        dl{
+                            padding: pxTorem(20px);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            dt{
+                                img{
+                                    width: pxTorem(35px);
+                                    height: pxTorem(35px);
+                                }
+                            }
+                            dd{
+                                font-size: pxTorem(14px);
+                            }
+                        }
+                    }
+                }
+                .swiper-pagination{
+                    bottom: pxTorem(-10px);
+                }
+            }
+            }
+            .section-banner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: pxTorem(10px);
+            img{
+                width: pxTorem(345px);
+            }
+            }
+            .section-merchant{
+                display: flex;
+                flex-direction: column;
+                h3{
+                    font-size: pxTorem(20px);
+                }
+                .merchant-nav{
+                    display: flex;
+                    justify-content: space-around;
+                    span{
+                        font-size: pxTorem(14px);
+                    }
+                }
+                .merchant-scroll{
+                    dl{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        dt{
+                            img{
+                                width: pxTorem(100px);
+                            }
+                        }
+                        dd{
+                            img{
+                                width: pxTorem(250px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+       
+
+    }
+    footer{
+        height: pxTorem(55px);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #fff;
+        dl{ 
+            width: pxTorem(25px);
+            height: pxTorem(25px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            dt{
+                width: pxTorem(30px);
+                height: pxTorem(35px);
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            dd{
+                font-size: pxTorem(12px);
+            }
+        }
+    }
+}
